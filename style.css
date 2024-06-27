@@ -2,7 +2,7 @@ body{
 margin: 0px;
 background-color: black;
 font-family: "Poiret One", sans-serif;
-
+color: white;
 }
 .header-section{
      background-color: black;
@@ -18,15 +18,9 @@ justify-content: space-between;
 width: 100px;
 margin:30px;
 }
-a{
-    text-decoration: none;
-    color: white; 
-    font-size: 18px;  
-    font-family:Verdana, Geneva, Tahoma, sans-serif; 
-}
-a:hover{
-    text-decoration: underline;
-    color: gold; 
+.name-logo{
+    margin: auto;
+     justify-content: center;
 }
 .header-button{
     border-color: gold;
@@ -44,12 +38,10 @@ a:hover{
     height: auto; 
     position: -webkit-sticky;
     position: sticky;
-     z-index: 1000;
+    z-index: 1000;
     top:0;
     padding: 10px;
-   
 } 
-
 .header2-apply{  
     display: flex; 
     align-items: center;
@@ -58,10 +50,19 @@ a:hover{
     text-align: center;
     margin: auto;
    justify-content: space-between;
-  
+}
+a{
+    text-decoration: none;
+    color: white; 
+    font-size: 18px;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+a:hover{
+    text-decoration: underline;
+    color: gold; 
 }
 .cakebg{
-background-image:url(image/bgcake.jpg.webp);
+background-image:url(image/bgcake.jpg);
 background-repeat: no-repeat;
 height: 100vh;
 width: 100%;
@@ -93,23 +94,32 @@ position:relative;
     height: auto;
     margin:auto;
     color: white;
- 
-   
-    
 }
 .home-section2-header{
     text-align: center; 
     font-size:40px;
     margin: auto;  
     color: white;
-
+    width: 700px;
 }
-.home-section2-text{
-   
+.gold-hr{
+    color:gold; 
+    width: 120px; 
+    height: 0x; 
+    border:1px gold solid;  
+    margin: 20px auto;
+}
+.info-container{
+    display: flex;
+     margin: 30px; 
+}
+.text-container{
     width: 600px;
     margin-right: 30px;
-   
-    
+}
+.gold-text{
+    color: gold;
+     font-size: 25px;
 }
 .cakes-container{
     display: flex;
@@ -130,7 +140,6 @@ position: relative;
     padding: 20px 35px;
     visibility:hidden;
 }
-
 .cake-div:hover .cake-button{
     visibility: visible;
 }
@@ -141,9 +150,7 @@ position: relative;
 display: flex; 
 justify-content: center;
 align-items: center;
-
 }
-
 .play-button-container{
     display: flex;
     justify-content: center;
@@ -165,40 +172,20 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
-
 .logo-play {
     color: black;
     font-size: 36px;
 }
 .grid-container{
-    display: grid;
-    grid-gap:90px;
-    grid-template-columns: auto auto auto;
+    display: flex;
     padding: 20px;
     margin: 50px 90px;
 }
 .grid-item{
     background-color: black;
     font-size: 30px;
-}
-
-.item1{
-    grid-column-start:1 ;
-    grid-column-end:2 ;
-    grid-row-start:1 ;
-    grid-row-end:2 ;
-}
-.item2{
-    grid-column-start:2 ;
-    grid-column-end:3 ;
-    grid-row-start:1 ;
-    grid-row-end:2 ;
-}
-.item3{
-    grid-column-start:3 ;
-    grid-column-end:4 ;
-    grid-row-start:1 ;
-    grid-row-end:2 ;
+    border: 1px gray solid;
+    padding:40px;
 }
 .rating{
     color: gold;
@@ -214,7 +201,6 @@ align-items: center;
      font-size: 19px;
      font-family:Verdana, Geneva, Tahoma, sans-serif; 
      line-height: 35px;
-
 }
 .blog-header-container{
     display: flex; 
@@ -235,3 +221,47 @@ align-items: center;
     padding: 0;
     margin: 0;
 }
+.insta-contact-div{
+    width: 700px;
+    margin: 100px auto;
+}
+.insta-img-container{
+    display: flex;
+    margin: 30px; 
+    justify-content: space-between;
+}
+.footer-header{
+    display: flex; 
+    padding: 30px;
+}
+.footer-header-text{
+    text-align: right; 
+    margin-right: 0;
+}
+.footer-div-container{
+    border: 1px gray solid;
+    border-left:none ;
+    border-right:none ;
+     display: flex;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin:auto 25px ;
+}
+.footer-div{
+    padding: 40px;
+}
+.footer-button{
+    border: 1px white solid;
+    margin: 20px;
+    padding: 15px;
+    color:white;
+    background-color: black;
+    padding: 5px 25px;
+}
+@media only screen and (max-width:768){
+    
+    
+}
+@media only screen and (min-width:768){
+    
+}
+
